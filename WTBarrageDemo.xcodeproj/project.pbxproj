@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AEC8D13D29A3B8EA895EC41F /* libPods-WTBarrageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5EF73AA81D11C5F4C5D23A /* libPods-WTBarrageDemo.a */; };
+		B55E47811E260464008042F5 /* fengche.png in Resources */ = {isa = PBXBuildFile; fileRef = B55E47801E260464008042F5 /* fengche.png */; };
+		B55E47831E2604A3008042F5 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B55E47821E2604A3008042F5 /* avatar.png */; };
 		B5E4E12C1E25FDE4009BDF65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E12B1E25FDE4009BDF65 /* main.m */; };
 		B5E4E12F1E25FDE4009BDF65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E12E1E25FDE4009BDF65 /* AppDelegate.m */; };
 		B5E4E1321E25FDE4009BDF65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1311E25FDE4009BDF65 /* ViewController.m */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		92B17A6C1B0A3DFBC944EC26 /* Pods-WTBarrageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBarrageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTBarrageDemo/Pods-WTBarrageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B55E47801E260464008042F5 /* fengche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fengche.png; sourceTree = "<group>"; };
+		B55E47821E2604A3008042F5 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		B5E4E1271E25FDE4009BDF65 /* WTBarrageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTBarrageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4E12B1E25FDE4009BDF65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5E4E12D1E25FDE4009BDF65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		B5E4E1291E25FDE4009BDF65 /* WTBarrageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B55E47821E2604A3008042F5 /* avatar.png */,
+				B55E47801E260464008042F5 /* fengche.png */,
 				B5E4E1411E25FE82009BDF65 /* Sources */,
 				B5E4E12D1E25FDE4009BDF65 /* AppDelegate.h */,
 				B5E4E12E1E25FDE4009BDF65 /* AppDelegate.m */,
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E4E13A1E25FDE4009BDF65 /* LaunchScreen.storyboard in Resources */,
+				B55E47831E2604A3008042F5 /* avatar.png in Resources */,
 				B5E4E1371E25FDE4009BDF65 /* Assets.xcassets in Resources */,
+				B55E47811E260464008042F5 /* fengche.png in Resources */,
 				B5E4E1351E25FDE4009BDF65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
