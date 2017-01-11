@@ -19,6 +19,12 @@
 
 @implementation WTBarrageContainer
 
+
+- (void)dealloc{
+    
+    [self stop];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
