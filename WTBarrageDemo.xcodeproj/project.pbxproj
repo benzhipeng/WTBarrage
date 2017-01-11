@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC8D13D29A3B8EA895EC41F /* libPods-WTBarrageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5EF73AA81D11C5F4C5D23A /* libPods-WTBarrageDemo.a */; };
+		B5E4E12C1E25FDE4009BDF65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E12B1E25FDE4009BDF65 /* main.m */; };
+		B5E4E12F1E25FDE4009BDF65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E12E1E25FDE4009BDF65 /* AppDelegate.m */; };
+		B5E4E1321E25FDE4009BDF65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1311E25FDE4009BDF65 /* ViewController.m */; };
+		B5E4E1351E25FDE4009BDF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4E1331E25FDE4009BDF65 /* Main.storyboard */; };
+		B5E4E1371E25FDE4009BDF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E4E1361E25FDE4009BDF65 /* Assets.xcassets */; };
+		B5E4E13A1E25FDE4009BDF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E4E1381E25FDE4009BDF65 /* LaunchScreen.storyboard */; };
+		B5E4E14A1E25FE82009BDF65 /* WTBarrageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1431E25FE82009BDF65 /* WTBarrageContainer.m */; };
+		B5E4E14B1E25FE82009BDF65 /* WTBarrageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1451E25FE82009BDF65 /* WTBarrageContent.m */; };
+		B5E4E14C1E25FE82009BDF65 /* WTBarrageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1471E25FE82009BDF65 /* WTBarrageItem.m */; };
+		B5E4E14D1E25FE82009BDF65 /* WTBarrageRowContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4E1491E25FE82009BDF65 /* WTBarrageRowContainer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		92B17A6C1B0A3DFBC944EC26 /* Pods-WTBarrageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBarrageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTBarrageDemo/Pods-WTBarrageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B5E4E1271E25FDE4009BDF65 /* WTBarrageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTBarrageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E4E12B1E25FDE4009BDF65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5E4E12D1E25FDE4009BDF65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5E4E12E1E25FDE4009BDF65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5E4E1301E25FDE4009BDF65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5E4E1311E25FDE4009BDF65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5E4E1341E25FDE4009BDF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5E4E1361E25FDE4009BDF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5E4E1391E25FDE4009BDF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5E4E13B1E25FDE4009BDF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E4E1421E25FE82009BDF65 /* WTBarrageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBarrageContainer.h; sourceTree = "<group>"; };
+		B5E4E1431E25FE82009BDF65 /* WTBarrageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBarrageContainer.m; sourceTree = "<group>"; };
+		B5E4E1441E25FE82009BDF65 /* WTBarrageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBarrageContent.h; sourceTree = "<group>"; };
+		B5E4E1451E25FE82009BDF65 /* WTBarrageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBarrageContent.m; sourceTree = "<group>"; };
+		B5E4E1461E25FE82009BDF65 /* WTBarrageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBarrageItem.h; sourceTree = "<group>"; };
+		B5E4E1471E25FE82009BDF65 /* WTBarrageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBarrageItem.m; sourceTree = "<group>"; };
+		B5E4E1481E25FE82009BDF65 /* WTBarrageRowContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBarrageRowContainer.h; sourceTree = "<group>"; };
+		B5E4E1491E25FE82009BDF65 /* WTBarrageRowContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBarrageRowContainer.m; sourceTree = "<group>"; };
+		EAAEEA72067634233C18DD88 /* Pods-WTBarrageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBarrageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTBarrageDemo/Pods-WTBarrageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC5EF73AA81D11C5F4C5D23A /* libPods-WTBarrageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTBarrageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5E4E1241E25FDE4009BDF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC8D13D29A3B8EA895EC41F /* libPods-WTBarrageDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C6778F5595D1D34884DFA6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAAEEA72067634233C18DD88 /* Pods-WTBarrageDemo.debug.xcconfig */,
+				92B17A6C1B0A3DFBC944EC26 /* Pods-WTBarrageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5E4E11E1E25FDE4009BDF65 = {
+			isa = PBXGroup;
+			children = (
+				B5E4E1291E25FDE4009BDF65 /* WTBarrageDemo */,
+				B5E4E1281E25FDE4009BDF65 /* Products */,
+				4C6778F5595D1D34884DFA6E /* Pods */,
+				D195717853C998958B7F8056 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5E4E1281E25FDE4009BDF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4E1271E25FDE4009BDF65 /* WTBarrageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5E4E1291E25FDE4009BDF65 /* WTBarrageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4E1411E25FE82009BDF65 /* Sources */,
+				B5E4E12D1E25FDE4009BDF65 /* AppDelegate.h */,
+				B5E4E12E1E25FDE4009BDF65 /* AppDelegate.m */,
+				B5E4E1301E25FDE4009BDF65 /* ViewController.h */,
+				B5E4E1311E25FDE4009BDF65 /* ViewController.m */,
+				B5E4E1331E25FDE4009BDF65 /* Main.storyboard */,
+				B5E4E1361E25FDE4009BDF65 /* Assets.xcassets */,
+				B5E4E1381E25FDE4009BDF65 /* LaunchScreen.storyboard */,
+				B5E4E13B1E25FDE4009BDF65 /* Info.plist */,
+				B5E4E12A1E25FDE4009BDF65 /* Supporting Files */,
+			);
+			path = WTBarrageDemo;
+			sourceTree = "<group>";
+		};
+		B5E4E12A1E25FDE4009BDF65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4E12B1E25FDE4009BDF65 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5E4E1411E25FE82009BDF65 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4E1421E25FE82009BDF65 /* WTBarrageContainer.h */,
+				B5E4E1431E25FE82009BDF65 /* WTBarrageContainer.m */,
+				B5E4E1441E25FE82009BDF65 /* WTBarrageContent.h */,
+				B5E4E1451E25FE82009BDF65 /* WTBarrageContent.m */,
+				B5E4E1461E25FE82009BDF65 /* WTBarrageItem.h */,
+				B5E4E1471E25FE82009BDF65 /* WTBarrageItem.m */,
+				B5E4E1481E25FE82009BDF65 /* WTBarrageRowContainer.h */,
+				B5E4E1491E25FE82009BDF65 /* WTBarrageRowContainer.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D195717853C998958B7F8056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC5EF73AA81D11C5F4C5D23A /* libPods-WTBarrageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5E4E1261E25FDE4009BDF65 /* WTBarrageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E4E13E1E25FDE4009BDF65 /* Build configuration list for PBXNativeTarget "WTBarrageDemo" */;
+			buildPhases = (
+				A00F47B7D683EBFB079014A5 /* [CP] Check Pods Manifest.lock */,
+				B5E4E1231E25FDE4009BDF65 /* Sources */,
+				B5E4E1241E25FDE4009BDF65 /* Frameworks */,
+				B5E4E1251E25FDE4009BDF65 /* Resources */,
+				26265D781410A1C60D18E8E8 /* [CP] Embed Pods Frameworks */,
+				7D6200B42D316E4DFB9DA834 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTBarrageDemo;
+			productName = WTBarrageDemo;
+			productReference = B5E4E1271E25FDE4009BDF65 /* WTBarrageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5E4E11F1E25FDE4009BDF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ben;
+				TargetAttributes = {
+					B5E4E1261E25FDE4009BDF65 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5E4E1221E25FDE4009BDF65 /* Build configuration list for PBXProject "WTBarrageDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5E4E11E1E25FDE4009BDF65;
+			productRefGroup = B5E4E1281E25FDE4009BDF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5E4E1261E25FDE4009BDF65 /* WTBarrageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5E4E1251E25FDE4009BDF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E4E13A1E25FDE4009BDF65 /* LaunchScreen.storyboard in Resources */,
+				B5E4E1371E25FDE4009BDF65 /* Assets.xcassets in Resources */,
+				B5E4E1351E25FDE4009BDF65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26265D781410A1C60D18E8E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTBarrageDemo/Pods-WTBarrageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D6200B42D316E4DFB9DA834 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTBarrageDemo/Pods-WTBarrageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00F47B7D683EBFB079014A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5E4E1231E25FDE4009BDF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E4E14C1E25FE82009BDF65 /* WTBarrageItem.m in Sources */,
+				B5E4E1321E25FDE4009BDF65 /* ViewController.m in Sources */,
+				B5E4E14B1E25FE82009BDF65 /* WTBarrageContent.m in Sources */,
+				B5E4E14A1E25FE82009BDF65 /* WTBarrageContainer.m in Sources */,
+				B5E4E12F1E25FDE4009BDF65 /* AppDelegate.m in Sources */,
+				B5E4E12C1E25FDE4009BDF65 /* main.m in Sources */,
+				B5E4E14D1E25FE82009BDF65 /* WTBarrageRowContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5E4E1331E25FDE4009BDF65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5E4E1341E25FDE4009BDF65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5E4E1381E25FDE4009BDF65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5E4E1391E25FDE4009BDF65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5E4E13C1E25FDE4009BDF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5E4E13D1E25FDE4009BDF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5E4E13F1E25FDE4009BDF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAEEA72067634233C18DD88 /* Pods-WTBarrageDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WTBarrageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ww.WTBarrageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5E4E1401E25FDE4009BDF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B17A6C1B0A3DFBC944EC26 /* Pods-WTBarrageDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WTBarrageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ww.WTBarrageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5E4E1221E25FDE4009BDF65 /* Build configuration list for PBXProject "WTBarrageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E4E13C1E25FDE4009BDF65 /* Debug */,
+				B5E4E13D1E25FDE4009BDF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E4E13E1E25FDE4009BDF65 /* Build configuration list for PBXNativeTarget "WTBarrageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E4E13F1E25FDE4009BDF65 /* Debug */,
+				B5E4E1401E25FDE4009BDF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5E4E11F1E25FDE4009BDF65 /* Project object */;
+}
