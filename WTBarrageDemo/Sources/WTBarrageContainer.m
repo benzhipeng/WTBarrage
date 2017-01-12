@@ -49,13 +49,13 @@
         
         [self.row1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.and.trailing.and.top.mas_equalTo(0);
-            make.height.mas_equalTo(50);
+            make.height.mas_equalTo(44);
         }];
         
         [self.row2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.and.trailing.mas_equalTo(0);
             make.top.mas_equalTo(self.row1.mas_bottom).offset(10);
-            make.height.mas_equalTo(50);
+            make.height.mas_equalTo(44);
         }];
         
   

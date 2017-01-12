@@ -35,7 +35,7 @@
     
     [self.barrageContainer mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.and.trailing.mas_equalTo(0);
-        make.height.mas_equalTo(110);
+        make.height.mas_equalTo(98);
         make.centerY.mas_equalTo(self.view.mas_centerY);
     }];
     

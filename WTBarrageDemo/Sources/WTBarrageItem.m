@@ -52,7 +52,7 @@
         
         self.avatarImageView = ({
             UIImageView* view = [[UIImageView alloc] init];
-            view.layer.cornerRadius = 25;
+            view.layer.cornerRadius = 22;
             view.layer.masksToBounds = YES;
             [self addSubview:view];
             view;
@@ -82,7 +82,7 @@
         
         [self.avatarImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.and.top.and.bottom.mas_equalTo(0);
-            make.width.mas_equalTo(50);
+            make.width.mas_equalTo(44);
         }];
         
     
@@ -94,8 +94,8 @@
         
         [self.trailImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.and.bottom.mas_equalTo(0);
-            make.width.mas_equalTo(50);
-            make.height.mas_equalTo(50);
+            make.width.mas_equalTo(44);
+            make.height.mas_equalTo(44);
             make.trailing.mas_equalTo(0);
         }];
         
@@ -112,8 +112,8 @@
     [item.avatarImageView sd_setImageWithURL:[NSURL URLWithString:avatarIcon] placeholderImage:content.avatarPlaceHolder];
     item.barrageItemLabel.text = content.content;
     item.trailImageView.image = content.trailImage;
-    CGSize size =  [item systemLayoutSizeFittingSize:CGSizeMake(CGFLOAT_MAX, 50)];
-    item.frame = CGRectMake(s_w, 0, size.width, 50);
+    CGSize size =  [item systemLayoutSizeFittingSize:CGSizeMake(CGFLOAT_MAX, 44)];
+    item.frame = CGRectMake(s_w, 0, size.width, 44);
     return item;
     
 }
