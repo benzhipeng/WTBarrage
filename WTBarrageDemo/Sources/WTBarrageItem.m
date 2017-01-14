@@ -38,7 +38,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-
+        
         self.contentView = ({
             
             UIView* view = [UIView new];
@@ -76,7 +76,7 @@
         [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(20);
             make.bottom.mas_equalTo(0);
-            make.height.mas_equalTo(20);
+            make.height.mas_equalTo(26);
             make.trailing.mas_equalTo(self.trailImageView.mas_trailing);
         }];
         
@@ -85,10 +85,10 @@
             make.width.mas_equalTo(44);
         }];
         
-    
+        
         [self.barrageItemLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.mas_equalTo(self.avatarImageView.mas_trailing);
-            make.bottom.mas_equalTo(0);
+            make.bottom.mas_equalTo(-4);
             make.trailing.mas_equalTo(self.trailImageView.mas_leading).offset(10);
         }];
         
@@ -105,7 +105,7 @@
 
 
 + (instancetype)barrageItemWithContent:(WTBarrageContent*)content{
-
+    
     NSString *avatarIcon = content.avatar;
     CGFloat s_w = [UIScreen mainScreen].bounds.size.width;
     WTBarrageItem* item = [[WTBarrageItem alloc] init];
