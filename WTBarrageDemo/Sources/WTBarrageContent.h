@@ -13,5 +13,5 @@
 @property (nonatomic,copy) NSString* avatar;
 @property (nonatomic,strong) UIImage* avatarPlaceHolder;
 @property (nonatomic,strong) UIImage* trailImage;
-@property (nonatomic,copy) NSString* content;
+@property (nonatomic,strong) NSMutableAttributedString* content;
 @end

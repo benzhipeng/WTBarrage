@@ -110,7 +110,7 @@
     CGFloat s_w = [UIScreen mainScreen].bounds.size.width;
     WTBarrageItem* item = [[WTBarrageItem alloc] init];
     [item.avatarImageView sd_setImageWithURL:[NSURL URLWithString:avatarIcon] placeholderImage:content.avatarPlaceHolder];
-    item.barrageItemLabel.text = content.content;
+    item.barrageItemLabel.attributedText = content.content;
     item.trailImageView.image = content.trailImage;
     CGSize size =  [item systemLayoutSizeFittingSize:CGSizeMake(CGFLOAT_MAX, 44)];
     item.frame = CGRectMake(s_w, 0, size.width, 44);
