@@ -8,130 +8,70 @@
 
 ## WTBarrageContainer
 
-`\- (instancetype)initWithFrame:(CGRect)frame
-
+```objective-c
+- (instancetype)initWithFrame:(CGRect)frame
 {
-
-    self = [super initWithFrame:frame];
-
-    if (self) {
-
-        
-
-        
-
-        self.barrages = [NSMutableArray arrayWithCapacity:0];
-
-        self.barrageQueue = dispatch_queue_create(nil, nil);
-
-        
-
-        self.row1 = ({
-
-            WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
-
-            [self addSubview:view];
-
-            view;
-
-        });
-
-        
-
-        self.row2 = ({
-
-            WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
-
-            [self addSubview:view];
-
-            view;
-
-        });
-
-        
-
-        
-
-        [self.row1 mas_makeConstraints:^(MASConstraintMaker *make) {
-
-            make.leading.and.trailing.and.top.mas_equalTo(0);
-
-            make.height.mas_equalTo(44);
-
-        }];
-
-        
-
-        [self.row2 mas_makeConstraints:^(MASConstraintMaker *make) {
-
-            make.leading.and.trailing.mas_equalTo(0);
-
-            make.top.mas_equalTo(self.row1.mas_bottom).offset(10);
-
-            make.height.mas_equalTo(44);
-
-        }];
-
-        
-
-  
-
-        __weak __typeof(self)weakSelf = self;
-
-        self.row1.rowContainerBlock = ^WTBarrageContent*() {
-
-        
-
-            WTBarrageContent* barrage = [weakSelf getBarrage];
-
-            if(!barrage){
-
-                return nil;
-
-            }
-
-            dispatch_barrier_sync(weakSelf.barrageQueue, ^{
-
-                [weakSelf.barrages removeObject:barrage];
-
-            });
-
-            return barrage;
-
-        };
-
-        
-
-        self.row2.rowContainerBlock = ^WTBarrageContent*() {
-
-            
-
-            WTBarrageContent* barrage = [weakSelf getBarrage];
-
-            if(!barrage){
-
-                return nil;
-
-            }
-
-            dispatch_barrier_sync(weakSelf.barrageQueue, ^{
-
-                [weakSelf.barrages removeObject:barrage];
-
-            });
-
-            return barrage;
-
-        };
-
-        
-
-        [self start];
-
-    }
-
-    return self;
-
-}`
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        
+        self.barrages = [NSMutableArray arrayWithCapacity:0];
+        self.barrageQueue = dispatch_queue_create(nil, nil);
+        
+        self.row1 = ({
+            WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
+            [self addSubview:view];
+            view;
+        });
+        
+        self.row2 = ({
+            WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
+            [self addSubview:view];
+            view;
+        });
+        
+        
+        [self.row1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.and.trailing.and.top.mas_equalTo(0);
+            make.height.mas_equalTo(44);
+        }];
+        
+        [self.row2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.and.trailing.mas_equalTo(0);
+            make.top.mas_equalTo(self.row1.mas_bottom).offset(10);
+            make.height.mas_equalTo(44);
+        }];
+        
+  
+        __weak __typeof(self)weakSelf = self;
+        self.row1.rowContainerBlock = ^WTBarrageContent*() {
+        
+            WTBarrageContent* barrage = [weakSelf getBarrage];
+            if(!barrage){
+                return nil;
+            }
+            dispatch_barrier_sync(weakSelf.barrageQueue, ^{
+                [weakSelf.barrages removeObject:barrage];
+            });
+            return barrage;
+        };
+        
+        self.row2.rowContainerBlock = ^WTBarrageContent*() {
+            
+            WTBarrageContent* barrage = [weakSelf getBarrage];
+            if(!barrage){
+                return nil;
+            }
+            dispatch_barrier_sync(weakSelf.barrageQueue, ^{
+                [weakSelf.barrages removeObject:barrage];
+            });
+            return barrage;
+        };
+        
+        [self start];
+    }
+    return self;
+}
+```
 
 ​        
