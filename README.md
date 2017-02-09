@@ -13,36 +13,18 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-        
-        self.barrages = [NSMutableArray arrayWithCapacity:0];
-        self.barrageQueue = dispatch_queue_create(nil, nil);
-        
+
         self.row1 = ({
             WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
             [self addSubview:view];
             view;
         });
-        
-        self.row2 = ({
-            WTBarrageRowContainer* view = [[WTBarrageRowContainer alloc] init];
-            [self addSubview:view];
-            view;
-        });
-        
-        
+
         [self.row1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.and.trailing.and.top.mas_equalTo(0);
             make.height.mas_equalTo(44);
         }];
-        
-        [self.row2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leading.and.trailing.mas_equalTo(0);
-            make.top.mas_equalTo(self.row1.mas_bottom).offset(10);
-            make.height.mas_equalTo(44);
-        }];
-        
-  
+
         __weak __typeof(self)weakSelf = self;
         self.row1.rowContainerBlock = ^WTBarrageContent*() {
         
@@ -55,23 +37,30 @@
             });
             return barrage;
         };
-        
-        self.row2.rowContainerBlock = ^WTBarrageContent*() {
-            
-            WTBarrageContent* barrage = [weakSelf getBarrage];
-            if(!barrage){
-                return nil;
-            }
-            dispatch_barrier_sync(weakSelf.barrageQueue, ^{
-                [weakSelf.barrages removeObject:barrage];
-            });
-            return barrage;
-        };
-        
-        [self start];
     }
     return self;
 }
 ```
 
-​        
+ 初始化方法中，创建WTBarrageRowContainer的实例，并将其放到WTBarrageContainer视图层级中。
+
+WTBarrageRowContainer的属性rowContainerBlock返回一个barrage内容用于填充弹幕。
+
+```objective-c
+- (void)insertBarrages:(NSArray*)barrages{
+
+    dispatch_barrier_sync(self.barrageQueue, ^{
+        [self.barrages addObjectsFromArray:barrages];
+    }); 
+}
+
+- (WTBarrageContent *)getBarrage{
+    
+    if(self.barrages.count <= 0){
+        return nil;
+    }
+    return [self.barrages firstObject];
+}
+```
+
+insertBarrages方法用于外部塞入弹幕。这边在往数组里面插入数据的时候，新起了一个同步线程，该任务包裹在串行队列里面，主要是涉及到数组的插入和删除，这样就能保证数组的安全性。
