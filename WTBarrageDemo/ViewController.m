@@ -52,7 +52,7 @@
         
         NSString* tmp = [barrage substringToIndex:arc4random() % (barrage.length)];
         WTBarrageContent* barrage = [[WTBarrageContent alloc] init];
-        barrage.avatar = @"http://h.hiphotos.bdimg.com/album/h%3D370%3Bq%3D90/sign=95b22d5bbb12c8fcabf3f0cacc38e378/6159252dd42a2834d3a2697059b5c9ea15cebf41.jpg";
+        barrage.avatar = @"http://xq.139life.com/images/16.jpg";
         barrage.avatarPlaceHolder = [UIImage imageNamed:@"avatar"];
         barrage.trailImage = [UIImage imageNamed:@"fengche"];
         barrage.content = [[NSMutableAttributedString alloc] initWithString:tmp];
