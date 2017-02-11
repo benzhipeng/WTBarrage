@@ -174,5 +174,5 @@ WTBarrageItem* item = [WTBarrageItem barrageItemWithContent:barrageText];
 }];
 ```
 
-最后附上demo地址:[https://github.com/benzhipeng/WTBarrage.git]()
+最后附上demo地址:[](https://github.com/benzhipeng/WTBarrage.git)
 
